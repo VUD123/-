@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko" class="iroje-layout"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)한국이건</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #1c1c1c;
+        }
+        .logo {
+            margin: 15px;
+        }
+        .buttons {
+            margin: 15px;
+            display: flex;
+            gap: 20px;
+        }
+        .buttons button {]
+            font-family: 'Black Han Sans';
+            font-style: bold;
+            font-style: italic;
+            font-size: 35px;
+            border: none;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            border-bottom: 1px solid #1c1c1c;
+        }
+        main {
+            flex: 0;
+            padding: 10px;
+        }
+        footer {
+            font-family: 'Black Han Sans';
+            color: #ffffff;
+            background-color: #1c1c1c;
+            padding: 10px 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="메인 홈페이지.html">
+                <img src="한국이건로고.png" alt="로고" style="height: 60px; transition: opacity 0.3s ease;" 
+                     onmouseover="this.style.opacity='0'; setTimeout(() => this.src='한국이건로고_호버.png', 300); setTimeout(() => this.style.opacity='1', 300);" 
+                     onmouseout="this.style.opacity='0'; setTimeout(() => this.src='한국이건로고.png', 300); setTimeout(() => this.style.opacity='1', 300);">
+            </a>
+        </div></div>
+        <div class="buttons">
+            <a href="INTRODUCTION.html"><button>INTRODUCTION</button></a>
+            <a href="PROJECT.html"><button>PROJECT</button></a>
+        </div>
+    </header>
+    <main>
+    <div style="display: flex; flex-direction: row; align-items: flex-start; gap: 20px;">
+        <!-- Left Section: Company Introduction -->
+        <div style="flex: 1;">
+            <h2 style="text-indent: 1.5em;">회사 소개</h2>
+            <p style="text-indent: 3em;">(주)한국이건은 최고의 품질과 서비스를 제공하기 위해 노력하는 회사입니다.</p>
+            <p style="text-indent: 3em;">고객의 신뢰를 바탕으로 지속 가능한 성장을 추구하며, 혁신적인 아이디어와 기술력을 통해 새로운 가치를 창출합니다.</p>
+            <h3 style="text-indent: 2em;">대표자</h3>
+            <h4 style="text-indent: 3em;">김보민</h4>
+
+            <h3 style="text-indent: 2em;">디자인 설계 실장</h3>
+            <h4 style="text-indent: 3em;">권영희</h4>
+            <p style="text-indent: 3em;">- 홍익대학교 산업미술대학원 석사 졸업</p>
+            <p style="text-indent: 3em;">- Art&design(수입리빙소품)</p>
+            <p style="text-indent: 3em;">- 가로수길본점/ 롯데백화점지점</p>
+            <p style="text-indent: 3em;">- 리빙탑스 외 다수 DP 디자인 참여</p>
+            <p style="text-indent: 3em;">- 전시기획 디자인 다수 참여</p>
+        </div>
+
+        <!-- Right Section: Company Photo -->
+        <div style="flex: 1; text-align: center;">
+            <img src="UGG.jpg" alt="회사 사진" style="max-width: 90%; height: auto; border: 1px solid #ddd;">
+        </div>
+    </div>
+
+    <!-- Map Section: Directions -->
+    <div style="margin-top: 30px;">
+        <h2 style="text-indent: 2em;">찾아오는 길</h2>
+        <div style="display: flex; flex-direction: row; gap: 20px; align-items: flex-start;">
+            <!-- Map Section -->
+            <iframe 
+            style="margin-left: 40px; border: 0;"
+            src="https://naver.me/xX7JmDAC"
+            width="50%"
+            height="400"
+            style="border: 0;"
+            allowfullscreen=""
+            loading="lazy">
+            </iframe>
+            <!-- Information Section -->
+            <div style="flex: 1;">
+            <h3>주소</h3>
+            <p>경기도 구리시 이문안로129번길 19, 2층(수택동)</p>
+            <h3>연락처</h3>
+            <p>전화: 031-555-4601</p>
+            <h3>이메일</h3>
+            <p>egan4601@naver.com</p>
+            <h3>운영 시간</h3>
+            <p>월-금: 9:00 AM - 6:00 PM<br>토-일: 휴무</p>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p>(주)한국이건 | 대표자 : 김보민 | 104-86-34956 | 경기도 구리시 이문안로129번길 19, 2층(수택동) | 031-555-4601</p>
+    </footer>
+</body>
+</html>

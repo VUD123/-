@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko" class="iroje-layout"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(주)한국이건</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #1c1c1c;
+        }
+        .logo {
+            margin: 15px;
+        }
+        .buttons {
+            margin: 15px;
+            display: flex;
+            gap: 20px;
+        }
+        .buttons button {]
+            font-family: 'Black Han Sans';
+            font-style: bold;
+            font-style: italic;
+            font-size: 35px;
+            border: none;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            border-bottom: 1px solid #1c1c1c;
+        }
+        main {
+            flex: 0;
+            padding: 10px;
+        }
+        footer {
+            font-family: 'Black Han Sans';
+            color: #ffffff;
+            background-color: #1c1c1c;
+            padding: 10px 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="메인 홈페이지.html">
+                <img src="한국이건로고.png" alt="로고" style="height: 60px; transition: opacity 0.3s ease;" 
+                     onmouseover="this.style.opacity='0'; setTimeout(() => this.src='한국이건로고_호버.png', 300); setTimeout(() => this.style.opacity='1', 300);" 
+                     onmouseout="this.style.opacity='0'; setTimeout(() => this.src='한국이건로고.png', 300); setTimeout(() => this.style.opacity='1', 300);">
+            </a>
+        </div></div>
+        <div class="buttons">
+            <a href="INTRODUCTION.html"><button>INTRODUCTION</button></a>
+            <a href="PROJECT.html"><button>PROJECT</button></a>
+        </div>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="slides" style="margin: 0; padding: 0;">
+                <img src="image3.jpg" alt="Image 3" class="clone" style="margin: 0; padding: 0;">
+                <img src="image1.jpg" alt="Image 1" style="margin: 0; padding: 0;">
+                <img src="image2.jpg" alt="Image 2" style="margin: 0; padding: 0;">
+                <img src="image3.jpg" alt="Image 3" style="margin: 0; padding: 0;">
+                <img src="image1.jpg" alt="Image 1" class="clone" style="margin: 0; padding: 0;">
+            </div>
+        </div>
+        <script>
+            const slides = document.querySelector('.slides');
+            const images = document.querySelectorAll('.slides img');
+            let index = 0;
+
+            function showNextSlide() {
+                index = (index + 1) % images.length;
+                slides.style.transform = `translateX(-${index * 100}%)`;
+            }
+
+            setInterval(showNextSlide, 3000);
+        </script>
+        <style>
+            .slider {
+                overflow: hidden;
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            .slides img {
+                width: 100%;
+                height: auto;
+                max-height: 850px; /* Adjust this value to reduce the height of the images */
+                object-fit: cover;
+            }
+            .slides {
+                display: flex;
+                transition: transform 1s ease-in-out;
+                width: 100%;
+            }
+            .slides img {
+                width: 100%;
+                flex-shrink: 0;
+            }
+        </style>
+    </main>
+    <footer>
+        <p>(주)한국이건 | 대표자 : 김보민 | 104-86-34956 | 경기도 구리시 이문안로129번길 19, 2층(수택동) | 031-555-4601</p>
+    </footer>
+</body>
+</html>
